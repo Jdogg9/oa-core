@@ -1,4 +1,5 @@
 import logging
+import sys
 _logger = logging.getLogger(__name__)
 
 import threading
@@ -72,8 +73,8 @@ def empty(part = None):
         pass
 
 def quit_app():
-    quit(0)
+    sys.exit(0)
 
 def close():
     """ Close Open Assistant. """
-    quit()
+    sys.exit()
