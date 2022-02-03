@@ -23,7 +23,8 @@ class Hasher:
     def __setitem__(self, hashname, value):
         self.hashes[hashname] = value
 
-    def get_hash_object(self):
+    @staticmethod
+    def get_hash_object():
         """Returns an object to compute a new hash"""
         return hashlib.sha256()
 

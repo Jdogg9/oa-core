@@ -43,7 +43,8 @@ class Config:
             'options': self.options,
         })
 
-    def _make_dir(self, directory):
+    @staticmethod
+    def _make_dir(directory):
         if not os.path.exists(directory):
             os.makedirs(directory)
 
