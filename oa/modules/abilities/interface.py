@@ -1,8 +1,8 @@
 import oa.legacy
 
-from oa.modules.abilities.core import info, put
+from oa.modules.abilities.core import info
 from oa.modules.abilities.interact import say
-from oa.modules.abilities.system import find_file, sys_exec
+from oa.modules.abilities.system import sys_exec
 
 def activate(s):
     """ Activate a specific window. """
